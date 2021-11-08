@@ -29,6 +29,8 @@ jobs:
       # 打包
       - name: 打包
         run: npm run build
+        env:
+          CI: true
 
       # 上传阿里云
       - name: 发布到阿里云
