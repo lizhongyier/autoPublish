@@ -39,7 +39,8 @@ jobs:
           # 私钥
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           # scp参数
-          ARGS: "-avzr --delete"
+          ARGS: "-avzr --delete --exclude='*.pyc'"
+          SERVER_PORT: "22"
           # 源目录
           SOURCE: "dist"
           # 服务器ip：换成你的服务器IP
