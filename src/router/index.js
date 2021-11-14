@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from 'vue-router'
-import LHY from '../view/LHY.vue'
+import Lhy from '../view/LHY.vue'
 import Seats from '../view/Seats.vue'
 import Why from '../view/Why.vue'
 Vue.use(Router)
@@ -12,8 +12,8 @@ const routes = [
   },
   {
     path: '/lhy',
-    name: 'LHY',
-    component: LHY
+    name: 'Lhy',
+    component: Lhy
   },
   {
     path: '/why',
