@@ -14,7 +14,7 @@ for (let i = 0; i < 48 * 7; i++) {
 }
 _timeString = _timeArray.join('')
 export default {
-  name: 'app',
+  name: 'Seats',
   data(){
     return {
       timeSeries:_timeString

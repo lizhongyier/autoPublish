@@ -6,10 +6,12 @@ Vue.use(Router)
 const routes = [
   {
     path: '/',
+    name: 'Seats',
     component: Seats
   },
   {
     path: '/lhy',
+    name: 'LHY',
     component: LHY
   },
 ]
