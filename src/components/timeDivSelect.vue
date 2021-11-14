@@ -7,7 +7,7 @@
          <span class="current"></span>投放
        </div>
         <div class="tiplist">
-         <span></span>不投放
+         <span @click="toPage"></span>不投放
        </div>
      </div>
      <div class="swrap">
@@ -79,6 +79,9 @@ export default {
       } else {
         e.returnValue = false
       }
+    },
+    toPage() {
+      this.$router.push({name: 'Why'})
     },
     mousedownfn(e) {
       //  创建选框节点
