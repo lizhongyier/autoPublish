@@ -1,7 +1,7 @@
 <template>
   <div class="lhy">
     <!-- <iframe class="fire-worker" src="/animate/index.html" frameborder="0"></iframe> -->
-    <canvas id="canvas" width="825" height="631"></canvas>
+    <canvas id="canvas" width="425" height="631"></canvas>
   </div>
 </template>
 
@@ -290,6 +290,13 @@ export default {
   //     var b = parseInt((.5-Math.sin(col)*.5)*16);
   //     return "#"+r.toString(16)+g.toString(16)+b.toString(16);
   //   }
+
+  window.addEventListener("resize",()=>{
+      canvas.width=canvas.clientWidth;
+      canvas.height=canvas.clientHeight;
+      cx=canvas.width/2;
+      cy=canvas.height/2;
+    });
 
     function frame(){
       if(frames > 100000){
