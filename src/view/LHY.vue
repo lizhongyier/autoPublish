@@ -1,6 +1,7 @@
 <template>
   <div class="lhy">
-    <iframe class="fire-worker" src="/animate/index.html" frameborder="0"></iframe>
+    <!-- <iframe class="fire-worker" src="/animate/index.html" frameborder="0"></iframe> -->
+    <h3>这啥呀</h3>
   </div>
 </template>
 
