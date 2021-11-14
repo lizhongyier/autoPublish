@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <br/> <br/> <br/> 
+    <time-div-select v-model="timeSeries"></time-div-select>
   </div>
 </template>
 
 <script>
-// import timeDivSelect from './components/timeDivSelect.vue'
+import timeDivSelect from '../components/timeDivSelect.vue'
 let _timeArray = []
 let _timeString = ''
 for (let i = 0; i < 48 * 7; i++) {
@@ -20,7 +21,7 @@ export default {
     }
   },
   components: {
-    // timeDivSelect
+    timeDivSelect
   },
   watch:{
     timeSeries(val){
@@ -32,14 +33,4 @@ export default {
 </script>
 
 <style>
-html,body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%!important;
-}
-#app {
-  width: 100%!important;
-  height: 100%!important;
-}
 </style>
