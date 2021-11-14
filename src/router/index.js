@@ -5,11 +5,11 @@ import Seats from '../view/Seats.vue'
 Vue.use(Router)
 const routes = [
   {
-    path: '/',
+    path: '/seat',
     component: Seats
   },
   {
-    path: '/lhy',
+    path: '/',
     component: LHY
   },
 ]
